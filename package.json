@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "homepage": "https://github.com/demchenkoalex/react-native-easy-search-input#readme",
-  "main": "src/index.tsx",
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "author": "Antonio Goncalves <acgtwentyone@gmail.com>",
   "license": "MIT",
