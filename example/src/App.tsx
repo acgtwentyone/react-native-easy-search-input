@@ -4,12 +4,13 @@ import { EasySearchInput } from 'react-native-easy-search-input'
 
 const App = () => {
   const [isSearching, setIsSearching] = useState(false)
-  const [searchData, setSearchData] = useState<[]>([])
+  const [searchData, setSearchData] = useState<[]>([{ name: 'Antonio' }])
   const [searchQuery, setSearchQuery] = useState<string>('')
   const [searchResults, setSearchResults] = useState<[]>([])
 
   useEffect(() => {
-    // console.log(searchResults)
+    console.log(searchResults)
+    console.log(searchQuery)
   })
 
   const EmptySearchComponent = () => {
