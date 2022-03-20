@@ -2,24 +2,23 @@ import * as React from 'react'
 import { StyleSheet, TextInput, View } from 'react-native'
 
 interface SearchInputProps {
-  EmptySearchComponent: React.FC
-  ResultsComponent: React.FC
+  EmptySearchComponent?: React.FC
+  ResultsComponent?: React.FC
   searchData: []
-  setSearchData: any
+  setSearchData?: any
   searchResults: []
   setSearchResults: any
   isSearching: boolean
   setIsSearching: any
   searchQuery: string
-  placeholder: string
-  searchContainerStyle: {}
-  searchInputStyle: {}
-  onChangeSearchQuery: any
+  setSearchQuery: any
+  placeholder?: string
+  searchContainerStyle?: {}
+  searchInputStyle?: {}
 }
 
 export const EasySearchInput: React.FC<SearchInputProps> = ({
   searchData,
-  setSearchData,
   isSearching,
   searchResults,
   setSearchResults,
@@ -28,13 +27,13 @@ export const EasySearchInput: React.FC<SearchInputProps> = ({
   placeholder,
   EmptySearchComponent,
   ResultsComponent,
-  onChangeSearchQuery,
+  setSearchQuery,
   searchContainerStyle,
   searchInputStyle,
 }) => {
   const _search = async (input: string) => {
     setIsSearching(true)
-    onChangeSearchQuery(input)
+    setSearchQuery(input)
     const _copyOfData = searchData
     let results = _copyOfData.filter((data) => {
       return data
@@ -58,11 +57,13 @@ export const EasySearchInput: React.FC<SearchInputProps> = ({
       {!isSearching &&
         searchResults.length === 0 &&
         searchQuery !== null &&
-        searchQuery !== '' && <EmptySearchComponent />}
+        searchQuery !== '' &&
+        EmptySearchComponent && <EmptySearchComponent />}
       {!isSearching &&
         searchResults.length > 0 &&
         searchQuery !== null &&
-        searchQuery !== '' && <ResultsComponent />}
+        searchQuery !== '' &&
+        ResultsComponent && <ResultsComponent />}
     </View>
   )
 }
