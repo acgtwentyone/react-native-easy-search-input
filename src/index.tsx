@@ -53,6 +53,7 @@ export const EasySearchInput: React.FC<SearchInputProps> = ({
         }
         value={searchQuery}
         placeholder={placeholder ? placeholder : 'search...'}
+        placeholderTextColor='black'
       />
       {!isSearching &&
         searchResults.length === 0 &&
@@ -70,15 +71,20 @@ export const EasySearchInput: React.FC<SearchInputProps> = ({
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
-    height: 200,
+    padding: 16,
   },
   input: {
-    padding: 16,
-    borderColor: '#893398',
-    borderWidth: 1,
-    borderRadius: 0,
+    flex: 1,
+    // backgroundColor: 'white',
+    width: '100%',
+    paddingHorizontal: 32,
+    paddingVertical: 32,
+    // borderColor: '#893398',
+    borderWidth: 0.8,
+    borderRadius: 5,
+    color: 'black',
   },
 })
