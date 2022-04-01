@@ -7,8 +7,8 @@ React native package to easily search data based on the state data.
 - [Install](#Install)
 - [Usage](#Usage)
 - [Api](#Api)
-- [Contributing](#Contributing)
 - [Comunity](#Comunity)
+- [Contributing](#Contributing)
 - [Maintainers](#Maintainers)
 - [License](#License)
 
@@ -22,7 +22,7 @@ npm install react-native-easy-search-input
 
 ## Usage
 ## Api
-## Contributing
 ## Comunity
+## Contributing
 ## Maintainers
 ## License 
