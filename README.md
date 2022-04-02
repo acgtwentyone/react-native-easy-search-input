@@ -9,7 +9,7 @@ React native package to easily search data based on the state data.
 - [Install](#Install)
 - [Usage](#Usage)
 - [Api](#Api)
-- [Comunity](#Comunity)
+- [Community](#Community)
 - [Contributing](#Contributing)
 - [Maintainers](#Maintainers)
 - [License](#License)
