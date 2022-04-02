@@ -14,13 +14,6 @@ React native package to easily search data based on the state data.
 - [Maintainers](#Maintainers)
 - [License](#License)
 
-## Usage
-## Api
-## Comunity
-## Contributing
-## Maintainers
-## License 
-
 ## Install
 
 Make sure you have [node](https://nodejs.org/en/) installed, go ahead, and run the following command
@@ -107,19 +100,18 @@ Here is the customization properties you may use in order to customize your brea
 | searchContainerStyle        | object        | style to be applied to the search container                                 |
 | searchInputStyle            | object        | style to be applied to the input element                                    |
 
-
-## Maintainers
-
-[@acgtwentyone](https://github.com/acgtwentyone)
+## Community
+This package is open source. Please read the [code-of-conduting](https://github.com/acgtwentyone/react-native-easy-search-input/blob/main/CODE_OF_CONDUCT.md)
 
 ## Contributing
 
 See the [contributing file](https://github.com/acgtwentyone/react-native-easy-search-input/blob/main/CONTRIBUTING.md)!
 
-## Community
-This package is open source. Please read the [code-of-conduting](https://github.com/acgtwentyone/react-native-easy-search-input/blob/main/CODE_OF_CONDUCT.md)
-
 Small note: If editing the README, please conform to the [standard-readme](https://github.com/acgtwentyone/react-native-easy-search-input#readme) specification.
+
+## Maintainers
+
+[@acgtwentyone](https://github.com/acgtwentyone)
 
 ## License
 
