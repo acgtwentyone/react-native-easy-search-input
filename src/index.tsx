@@ -3,33 +3,33 @@ import { StyleSheet, Text, TextInput, View } from 'react-native'
 
 interface SearchInputProps {
   EmptySearchComponent?: React.FC
-  ResultsComponent?: React.FC
-  searchData: []
-  setSearchData?: any
-  searchResults: []
-  setSearchResults: any
   isSearching: boolean
-  setIsSearching: any
-  searchQuery: string
-  setSearchQuery: any
   placeholder?: string
+  ResultsComponent?: React.FC
   searchContainerStyle?: {}
+  searchData: []
   searchInputStyle?: {}
+  searchQuery: string
+  searchResults: []
+  setIsSearching: any
+  setSearchData?: any
+  setSearchQuery: any
+  setSearchResults: any
 }
 
 export const EasySearchInput: React.FC<SearchInputProps> = ({
-  searchData,
-  isSearching,
-  searchResults,
-  setSearchResults,
-  setIsSearching,
-  searchQuery,
-  placeholder,
   EmptySearchComponent,
+  isSearching,
+  placeholder,
   ResultsComponent,
-  setSearchQuery,
   searchContainerStyle,
+  searchData,
   searchInputStyle,
+  searchQuery,
+  searchResults,
+  setIsSearching,
+  setSearchQuery,
+  setSearchResults,
 }) => {
   const _search = async (input: string) => {
     setIsSearching(true)
@@ -71,15 +71,15 @@ export const EasySearchInput: React.FC<SearchInputProps> = ({
 
 const styles = StyleSheet.create({
   container: {
-    width: '100%',
     padding: 16,
+    width: '100%',
   },
   input: {
-    width: '100%',
-    marginVertical: 8,
-    borderWidth: 0.8,
     borderRadius: 5,
+    borderWidth: 0.8,
+    marginVertical: 8,
     paddingHorizontal: 16,
     paddingVertical: 14,
+    width: '100%',
   },
 })
