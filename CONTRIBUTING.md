@@ -15,13 +15,13 @@ Setup Install [Node.js](https://nodejs.org/en/) if you have not already. (We sug
 Fork the repo by running 
 
 ```
-git clone https://github.com/*yourusername*/booktracks.git
+git clone https://github.com/*yourusername*/react-native-easy-search-input.git
 ``` 
 
 Then navigate to the project by running the following command 
 
 ```
-cd booktracks 
+cd react-native-easy-search-input 
 ```
 
 And then type
