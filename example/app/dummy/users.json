@@ -1,43 +1,42 @@
-
 {
-    "data": [
-        {
-            "id": "pkjshjsa",
-            "first_name": "Antonio",
-            "last_name": "Gonçalves",
-            "address": {
-                "country": "Cape Verde",
-                "city": "Praia",
-                "provincy": "Santiago"
-            },
-            "contact": {
-                "mobile": "00238 952 91 59",
-                "email": "acgtwentyone@gmail.com"
-            },
-            "github": "https://www.github.com/acgtwentyone"
-        },
-        {
-            "id": "iksjsjja",
-            "first_name": "Bruno",
-            "last_name": "Barbosa",
-            "address": {
-                "country": "Cape Verde",
-                "provincy": "Santiago"
-            },
-            "contact": {
-                "mobile": "00238 952 91 59",
-                "email": "bruno.barbosa@ideiacv.com"
-            },
-            "state": "married"
-        },
-        {
-            "id": "qptrwnu",
-            "first_name": "Edson",
-            "last_name": "Tavares",
-            "address": {
-                "city": "Praia",
-                "provincy": "Santiago"
-            }
-        }
-    ]
+  "data": [
+    {
+      "id": "pkjshjsa",
+      "first_name": "Antonio",
+      "last_name": "Gonçalves",
+      "address": {
+        "country": "Cape Verde",
+        "city": "Praia",
+        "provincy": "Santiago"
+      },
+      "contact": {
+        "mobile": "00238 952 91 59",
+        "email": "acgtwentyone@gmail.com"
+      },
+      "github": "https://www.github.com/acgtwentyone"
+    },
+    {
+      "id": "iksjsjja",
+      "first_name": "Bruno",
+      "last_name": "Barbosa",
+      "address": {
+        "country": "Cape Verde",
+        "provincy": "Santiago"
+      },
+      "contact": {
+        "mobile": "00238 952 91 59",
+        "email": "bruno.barbosa@ideiacv.com"
+      },
+      "state": "married"
+    },
+    {
+      "id": "qptrwnu",
+      "first_name": "Edson",
+      "last_name": "Tavares",
+      "address": {
+        "city": "Praia",
+        "provincy": "Santiago"
+      }
+    }
+  ]
 }
