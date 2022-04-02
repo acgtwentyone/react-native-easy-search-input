@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { StyleSheet, TextInput, View } from 'react-native'
+import { StyleSheet, Text, TextInput, View } from 'react-native'
 
 interface SearchInputProps {
   EmptySearchComponent?: React.FC
@@ -52,9 +52,9 @@ export const EasySearchInput: React.FC<SearchInputProps> = ({
           })
         }
         value={searchQuery}
-        placeholder={placeholder ? placeholder : 'search...'}
-        placeholderTextColor='black'
+        placeholder={placeholder ? placeholder : 'Search...'}
       />
+      <Text>{searchQuery}</Text>
       {!isSearching &&
         searchResults.length === 0 &&
         searchQuery !== null &&
@@ -72,19 +72,14 @@ export const EasySearchInput: React.FC<SearchInputProps> = ({
 const styles = StyleSheet.create({
   container: {
     width: '100%',
-    alignItems: 'center',
-    justifyContent: 'center',
     padding: 16,
   },
   input: {
-    flex: 1,
-    // backgroundColor: 'white',
     width: '100%',
-    paddingHorizontal: 32,
-    paddingVertical: 32,
-    // borderColor: '#893398',
+    marginVertical: 8,
     borderWidth: 0.8,
     borderRadius: 5,
-    color: 'black',
+    paddingHorizontal: 16,
+    paddingVertical: 14,
   },
 })
