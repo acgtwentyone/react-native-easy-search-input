@@ -35,8 +35,8 @@ export const EasySearchInput: React.FC<SearchInputProps> = ({
     setIsSearching(true)
     setSearchQuery(input)
     const _copyOfData = searchData
-    let results = _copyOfData.filter((data) => {
-      return data
+    let results = _copyOfData.filter((res) => {
+      return res
     })
     return results
   }
