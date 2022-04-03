@@ -4,16 +4,14 @@ import { EasySearchInput } from 'react-native-easy-search-input'
 
 import dummyUsers from '../app/dummy/users.json'
 
-const data = JSON.parse(JSON.stringify(dummyUsers))
-
 const App = () => {
   const [isSearching, setIsSearching] = useState(false)
-  const [searchData, setSearchData] = useState<[]>(data)
+  const [searchData, setSearchData] = useState<[]>(dummyUsers)
   const [searchQuery, setSearchQuery] = useState<string>('')
   const [searchResults, setSearchResults] = useState<[]>([])
 
   useEffect(() => {
-    // console.log(searchResults)
+    console.log(searchResults)
     // console.log(searchQuery)
   })
 
@@ -24,8 +22,10 @@ const App = () => {
   const ResultsComponent = () => {
     return (
       <>
-        {searchResults.map(({ name }, i) => (
-          <Text key={i}>{name}</Text>
+        {searchResults.map(({ id, contact }) => (
+          <Text key={id}>
+            {undefined !== contact && undefined !== contact.email ? contact.email : 'no email'}
+          </Text>
         ))}
       </>
     )
