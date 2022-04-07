@@ -1,6 +1,8 @@
 import * as React from 'react'
 import { StyleSheet, TextInput, View } from 'react-native'
 
+import useRecursiveSearch from './hooks/useRecursiveSearch'
+
 interface SearchInputProps {
   EmptySearchComponent?: React.FC
   isSearching: boolean
@@ -31,14 +33,18 @@ export const EasySearchInput: React.FC<SearchInputProps> = ({
   setSearchQuery,
   setSearchResults,
 }) => {
+  const { dataSet } = useRecursiveSearch(searchData, searchQuery)
+
   const _search = async (input: string) => {
     setIsSearching(true)
     setSearchQuery(input)
-    const _copyOfData = searchData
-    let results = _copyOfData.filter((res) => {
-      return res
-    })
-    return results
+    // const _copyOfData = searchData
+    // let results = _copyOfData.filter((res) => {
+    //   return res
+    // })
+    // return results
+    console.log(dataSet)
+    return dataSet
   }
 
   return (
