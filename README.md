@@ -6,7 +6,7 @@ React native package to easily search data based on the state data.
 
 ## Install
 
-Make sure you have [node](https://nodejs.org/en/) installed, go ahead, and run the following command
+Make sure you have [Node.js](https://nodejs.org/en/) installed, go ahead, and run the following command
 
 ```
 npm install react-native-easy-search-input
@@ -20,7 +20,7 @@ import { EasySearchInput } from 'react-native-easy-search-input';
 ```
 
 Use as a component
-```
+``` javascript
 // define your state props
 const [isSearching, setIsSearching] = useState(false)
 const [searchData, setSearchData] = useState<[]>([{ name: 'Antonio' }])
