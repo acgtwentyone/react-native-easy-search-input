@@ -69,7 +69,7 @@ const __onCrumbPress = (crumb: Crumb) => {
     />
 ```
 
-#### for concrete example, please check the example folder
+We encourage you to take a look at the example folder
 
 ## API
 Here is the customization properties you may use in order to customize your breadcrumb. There is brief description of prop, type, option, and description 
