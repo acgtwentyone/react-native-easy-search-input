@@ -11,7 +11,7 @@ const App = () => {
   const [searchResults, setSearchResults] = useState<[]>([])
 
   useEffect(() => {
-    console.log(searchResults)
+    // console.log(searchResults)
     // console.log(searchQuery)
   })
 
