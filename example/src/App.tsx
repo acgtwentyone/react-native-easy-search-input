@@ -16,17 +16,26 @@ const App = () => {
   })
 
   const EmptySearchComponent = () => {
-    return <>No results could be found</>
+    return (
+      <>
+        <Text>No results could be found</Text>
+      </>
+    )
   }
 
   const ResultsComponent = () => {
     return (
       <>
-        {searchResults.map(({ id, contact }) => (
-          <Text key={id}>
-            {undefined !== contact && undefined !== contact.email ? contact.email : 'no email'}
-          </Text>
-        ))}
+        {searchResults.length > 0 &&
+          searchResults.map((item, i) => {
+            console.log(item)
+            return (
+              <Text key={i}>
+                {`${item.id} - ${item.first_name}`}
+                {/* {undefined !== contact && undefined !== contact.email ? contact.email : 'no email'} */}
+              </Text>
+            )
+          })}
       </>
     )
   }

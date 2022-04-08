@@ -1,6 +1,6 @@
 [
   {
-    "id": "pkjshjsa",
+    "id": "1",
     "first_name": "Antonio",
     "last_name": "Gonçalves",
     "address": {
@@ -15,7 +15,7 @@
     "github": "https://www.github.com/acgtwentyone"
   },
   {
-    "id": "iksjsjja",
+    "id": "2",
     "first_name": "Edson",
     "last_name": "Tavares",
     "address": {
@@ -24,14 +24,19 @@
     },
     "contact": {
       "mobile": "00238 952 91 59",
-      "email": "edson.barbosa@ideiacv.com"
+      "email": [
+        {
+          "home": "edson10.tavares@gmail.com",
+          "work": "edson.tavares@ideiacv.com"
+        }
+      ]
     },
     "state": "married"
   },
   {
-    "id": "qptrwnu",
-    "first_name": "Edson",
-    "last_name": "Tavares",
+    "id": "3",
+    "first_name": "Bruno",
+    "last_name": "Barbosa",
     "address": {
       "city": "Praia",
       "provincy": "Santiago"
