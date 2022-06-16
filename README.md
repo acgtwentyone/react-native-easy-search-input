@@ -2,7 +2,7 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/acgtwentyone/react-native-easy-search-input#readme)&nbsp;&nbsp;![GitHub repo size](https://img.shields.io/github/repo-size/acgtwentyone/react-native-easy-search-input)&nbsp;&nbsp;![GitHub issues](https://img.shields.io/github/issues-raw/acgtwentyone/react-native-easy-search-input)&nbsp;&nbsp;![GitHub last commit](https://img.shields.io/github/last-commit/acgtwentyone/react-native-easy-search-input)
 
-React native package to easily search data based on the state data.
+React native package to easily search through a simple but elegant  and customisable search input.
 
 ## Install
 
