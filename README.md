@@ -15,7 +15,7 @@ npm install react-native-easy-search-input
 ## Usage
 
 Import this module:
-```
+```javascript
 import { EasySearchInput } from 'react-native-easy-search-input';
 ```
 
