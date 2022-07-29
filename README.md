@@ -27,12 +27,6 @@ const [searchData, setSearchData] = useState<[]>([{ name: 'Antonio' }])
 const [searchQuery, setSearchQuery] = useState<string>('')
 const [searchResults, setSearchResults] = useState<[]>([])
 
-// initial selected crumbs, must be one crumb item
-const [selectedCrumb, setSelectedCrumb] = useState<Crumb>({
-    id: 0,
-    title: 'Root',
-})
-
 const EmptySearchComponent = () => {
   return <></>
 }
@@ -41,13 +35,7 @@ const ResultsComponent = () => {
   return <></>
 }
 
-// on crumb press event handler
-const __onCrumbPress = (crumb: Crumb) => {
-    console.log(crumb.id)
-    // console.log('Selected', `Crumb ${crumb.title} selected`)
-}
-
-// call for easy search input component call
+// use search input component 
 <EasySearchInput
     isSearching={isSearching}
     searchData={searchData}
