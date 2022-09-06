@@ -56,7 +56,7 @@ const ResultsComponent = () => {
 We encourage you to take a look at the example folder.
 
 ## API
-Here is the customization properties you may use in order to customize your breadcrumb. There is brief description of prop, type, option, and description 
+Here is the customization properties you may use in order to customize your breadcrumbs. 
 
 | prop                        | type          | description                                                                 |
 | --------------------------- |:-------------:|:----------------------------------------------------------------------------|
