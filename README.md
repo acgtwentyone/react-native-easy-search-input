@@ -4,7 +4,7 @@
 
 React native package to easily search through a simple but elegant  and customisable search input.
 
-This package was created using the [React Native Module Template](https://github.com/demchenkoalex/react-native-module-template)
+This package was created using the [React Native Module Template](https://github.com/demchenkoalex/react-native-module-template).
 
 ## Install
 
