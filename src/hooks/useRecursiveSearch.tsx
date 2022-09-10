@@ -1,30 +1,21 @@
-const useRecursiveSearch = (dataSet: [], query: string) => {
-  const result: [] = []
-  const searchTerm: string = query
-
-  const getEachItem = () => {
-    dataSet.forEach((item: object) => {
-      searchItem(item)
-    })
-    let uniqueResults = [...new Set(result)]
-    return uniqueResults
+const useRecursiveSearch = () => {
+  const searchItem = (data: [] | string, query: string) => {
+    const find = () => {
+      if (
+        data === query ||
+        (data.toString &&
+          query.toString &&
+          data
+            .toString()
+            .toLowerCase()
+            .includes(query.toString().toLowerCase()))
+      )
+        return true //you can modify the matching condition
+      return data === Object(data) && Object.values(data).some(find)
+    }
+    return (Array.isArray(data) ? data : Object.values(data)).filter(find)
   }
-
-  const searchItem = (item: object) => {
-    Object.keys(item).forEach((key) => {
-      const keyValue: any = item[key]
-      if (typeof keyValue === 'object') {
-        searchItem(keyValue)
-      }
-      if (typeof keyValue === 'string') {
-        let searchAsRegEx = new RegExp(searchTerm, 'gi')
-        if (keyValue.match(searchAsRegEx)) {
-          result.push(item)
-        }
-      }
-    })
-  }
-  return { getEachItem }
+  return { searchItem }
 }
 
 export default useRecursiveSearch

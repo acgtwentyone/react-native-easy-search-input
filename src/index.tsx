@@ -33,12 +33,12 @@ export const EasySearchInput: React.FC<SearchInputProps> = ({
   setSearchQuery,
   setSearchResults,
 }) => {
-  const { getEachItem } = useRecursiveSearch(searchData, searchQuery)
+  const { searchItem } = useRecursiveSearch()
 
   const _search = async (input: string) => {
     setIsSearching(true)
     setSearchQuery(input)
-    const results = getEachItem()
+    const results = searchItem(searchData, searchQuery)
     return results
   }
 
