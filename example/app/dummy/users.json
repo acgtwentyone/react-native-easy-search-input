@@ -19,7 +19,7 @@
     "first_name": "Edson",
     "last_name": "Tavares",
     "address": {
-      "country": "Cape Verde",
+      "country": "Portugal",
       "provincy": "Santiago"
     },
     "contact": {
@@ -38,7 +38,7 @@
     "first_name": "Bruno",
     "last_name": "Barbosa",
     "address": {
-      "city": "Praia",
+      "city": "Europa",
       "provincy": "Santiago"
     }
   }
